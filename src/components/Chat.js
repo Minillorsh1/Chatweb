@@ -52,7 +52,7 @@ export const Chat = ({ room }) => {
   return (
     <div className="chat-app">
       <div className="header">
-        <h1>Bienvenido a la sala: {room.toUpperCase()}</h1>
+        <h1>Welcome to: {room.toUpperCase()}</h1>
       </div>
       <div className="messages">
         {messages.map((message) => (
@@ -70,7 +70,7 @@ export const Chat = ({ room }) => {
           placeholder="Escribe tu mensaje aqui..."
         />
         <button type="submit" className="send-button">
-          Enviar
+          Send
         </button>
       </form>
     </div>
