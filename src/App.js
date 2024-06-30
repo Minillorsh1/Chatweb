@@ -8,24 +8,25 @@ import "./App.css";
 const cookies = new Cookies();
 
 function ChatApp() {
-  const [isAuth, setIsAuth] = useState(cookies.get("auth-token"));
+//  const [isAuth, setIsAuth] = useState(cookies.get("auth-token"));
   const [isInChat, setIsInChat] = useState(null);
   const [room, setRoom] = useState("");
 
-  if (!isAuth) {
-    return (
-      <AppWrapper
-        isAuth={isAuth}
-        setIsAuth={setIsAuth}
-        setIsInChat={setIsInChat}
-      >
-        <Auth setIsAuth={setIsAuth} />
-      </AppWrapper>
-    );
-  }
+//  if (!isAuth) {
+//    return (
+//      <AppWrapper
+//        isAuth={isAuth}
+//        setIsAuth={setIsAuth}
+//        setIsInChat={setIsInChat}
+//      >
+//        <Auth setIsAuth={setIsAuth} />
+//      </AppWrapper>
+//    );
+//  }
 
   return (
-    <AppWrapper isAuth={isAuth} setIsAuth={setIsAuth} setIsInChat={setIsInChat}>
+  //  <AppWrapper isAuth={isAuth} setIsAuth={setIsAuth} setIsInChat={setIsInChat}>
+  <AppWrapper setIsInChat={setIsInChat}>
       {!isInChat ? (
         <div className="room">
           <label> Nombre de la sala: </label>
